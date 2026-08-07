@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+     <!--- navbar section -->
+     <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="nav-list">
+                <li><a href="#home" class="t-white roboto">Home<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About me<i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills<i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#projects" class="t-white roboto">Projects<i class="fa-solid fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--- home section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="popinss">Hi, i'm</h6>
+                <h1 class="t-white">Faizan Ali</h1>
+                <h4 class="popins">Full Stack Software Engineer</h4>
+                <a href="{% static 'Faizan Ali - Resume.pdf' %}" target="_blank">
+                    <button class="btn btn-primary">Resume</button>
+                </a>
+                <a class="btn live popinss" id="hireme" href=""
+                target="_blank">lets talk</a>
+
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainimage">
+                <img src="{% static 'images/mypic.jpg' %}" alt="picture">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section -->
+    <section id="about">
+        <h1 class="t center my-2 t-white f-2">About <Menu></Menu></h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/dog.jpg' %}" alt="dog picture">"
+            </div>
+        </div>
+
+        <div class="about-right flex">
+            <div class="about-content">
+                <h1 class="t-white m-b-1 popinss">Faizan Ali</h1>
+                <p class="t-white popinss">I am a passionate full-stack software engineer with experience in building scalable web applications. I have a strong foundation in both frontend and backend technologies, and I enjoy solving complex problems and creating efficient solutions.</p>
+                <a href="btn" id="hireme " href="">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!--- skills section  -->
+     <section id ="skills">
+        <h1 class="t-center m-2 t-white f-2">Skills</h1>
+        <div class="services-centainer flex s-around h-50"></div>
+           <div class="skills-left flex s-center items-center">
+               <img src="{% static 'images/pro.jpg' %}" alt="skills image">
+           </div>
+           <div class="skills-right flex items-center">
+                <div class="skills-container">
+                    <div class="java bar p-relative"><span class="bar-content left t-white">Core Python</span>
+                    <spanc class="bar-content right-skills t-white">90%</spanc> </div>
+
+                    <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span>
+                    <spanc class="bar-content right-skills t-white">90%</spanc> </div>
+
+                    <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span>
+                    <spanc class="bar-content right-skills t-white">90%</spanc> </div>
+
+                    <div class="django bar p-relative"><span class="bar-content left t-white">Django</span>
+                    <spanc class="bar-content right-skills t-white">90%</spanc> </div>
+
+                    <div class="sql bar p-relative"><span class="bar-content left t-white">SQL</span>
+                    <spanc class="bar-content right-skills t-white">90%</spanc> </div>
+
+                </div>
+            </div>   
+        </div>
+     </section>
+
+     <!-- project section -->
+      <section id="Project">
+        <h1 class="t-center m-2 t-white f-2">Project</h1>
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-col s-center items-center">
+                 <h1 class="t-white popinss">Image Uploading Web App</h1>
+                 <p class="t-white popinss">A web application that allows users to upload and manage their images. The app provides features such as image resizing, cropping, and tagging. Users can also create albums and share their images with others.</p>
+                 <div class="button flex s-around">
+                    <a href="" target="_blank"
+                    class="btn mx-1 m-top">Github</a>
+                </div>
+            
+
+
+             <div class="project-item flex f-col s-center items-center">
+                <h1 class="t-white popinss">Image Uploading Web App</h1>
+                <p class="t-white popinss">A web application that allows users to upload and manage their images. The app provides features such as image resizing, cropping, and tagging. Users can also create albums and share their images with others.</p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank"
+                    class="btn mx-1 m-top">Github</a>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <!-- content me section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2 ">Contact Me</h1>
+        <div class="Contact-container flex s-around items-center">
+            <div class="form" id="contactform">
+                <form method="post">
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class=" popinss" placeholder="Enter your name"> 
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class=" popinss" placeholder="Enter your Email" required> 
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class=" popinss" placeholder="Enter your phone number" required> 
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="5" class=" popinss" placeholder="Enter your message" required></textarea>
+                    
+                    </div>
+                    <button type=" submit" class=""btn popinss" id=""submit">send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="t-white popinss">Home</a></li>
+            <li><a href="#About" class="t-white popinss">About me</a></li>
+            <li><a href="#skills" class="t-white popinss">Skills</a></li>
+            <li><a href="#Project" class="t-white popinss">Project</a></li>
+            <li><a href="#portfolio" class="t-white popinss">Home</a></li>
+
+        </ul>
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="" target=""_blank">
+                <li><i class="fa-brands fa-linked-in"></i></li>
+            </a>
+
+            <a href="" target=""_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+
+            <a href="" target=""_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 popinss">Copy;. All rights reserved -<span class="cpy-white popins">Error by Night</span></p>
+
+    </footer>
+
+</body>
+</html>
